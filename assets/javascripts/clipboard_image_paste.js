@@ -542,7 +542,7 @@
   //----------------------------------------------------------------------------
   // Check maximum number of attachment fields, return fields element.
   function checkAttachFields() {
-    var fileFields  = $("#attachments_fields");
+    var fileFields  = $(".attachments_fields");
     var imageFields = $("#cbp_image_fields");
     if (!fileFields || !imageFields ||
       (fileFields.children().length + imageFields.children().length) >= cbImagePaste.cbp_max_attachments)
@@ -576,7 +576,7 @@
 
     // move image attachment block to proper place
     var addFile;
-    var attachFields = $("#attachments_fields");
+    var attachFields = $(".attachments_fields");
 
     if (attachFields && attachFields.length > 0) {
       // Redmine <= 3.3
